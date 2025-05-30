@@ -2,14 +2,31 @@ query Input {
   cart {
     lines {
       id
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          product {
+            id
+          }
+        }
+      }
       cost {
         subtotalAmount {
           amount
         }
       }
     }
+    cost {
+      subtotalAmount {
+        amount
+      }
+    }
   }
   discount {
     discountClasses
+    metafield(namespace: "tiered", key: "config") {
+      value
+    }
   }
 }

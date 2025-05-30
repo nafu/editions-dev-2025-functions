@@ -3,8 +3,16 @@ query Input {
     deliveryGroups {
       id
     }
+    cost {
+      subtotalAmount {
+        amount
+      }
+    }
   }
   discount {
     discountClasses
+    metafield(namespace: "tiered", key: "config") {
+      value
+    }
   }
 }

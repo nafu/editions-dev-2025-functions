@@ -1,4 +1,4 @@
 {
-  "name": "tiered",
-  "description": "tiered"
+  "name": "Tiered Discount Campaign",
+  "description": "Configurable tiered discount system: quantity discounts, order value discounts, and free shipping thresholds"
 }
