@@ -1,0 +1,4 @@
+{
+  "rust-analyzer.linkedProjects": ["extensions/tiered/Cargo.toml"],
+  "rust-analyzer.cargo.buildScripts.enable": true
+}
